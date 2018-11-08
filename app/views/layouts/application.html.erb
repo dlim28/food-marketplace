@@ -8,31 +8,32 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="navbar">
-<br>
-
-<div class="rectangle"></div>
-
-<%# change to logged in homepage %>
-<% if user_signed_in? %>
-<div class="button1 navbar" id="landing_page_post_food" style="position: absolute; top: 12px; left:20px;"><%= link_to('Home', '/pages/landing_page_login')  %></div> 
-<% else %>
-<div class="button1 navbar" id="landing_page_post_food" style="position: absolute; top: 12px; left:20px;"><%= link_to('Home', :root)  %></div> 
-<% end %>
-
-  <div class="button2 navbar" id="landing_page_find_food" style="position: absolute; top: 12px; left:80px;"><%= link_to('Find Food', :products)  %></div>
-
-<div class="button3 navbar" id="landing_page_post_food" style="position: absolute; top: 12px; left:170px;"><%= link_to('Post Food', new_product_path)  %></div>
+  <body>
 
 
-<% if user_signed_in? %>
-    
-    <p style="position: absolute; top: 0px; right: 20px;"><%= link_to('Edit Account', '/users/edit') %>
-    <p style="position: absolute; top: 0px; right:110px;">Welcome <%= link_to(current_user.firstname, '/pages/landing_page_login') %> (<%= link_to('Logout', destroy_user_session_path, method: :delete) %>) </p>     
+    <header>
+    <%# change to logged in homepage %>
+        <nav>
+          <% if user_signed_in? %>
+            <%= link_to('Home', '/pages/landing_page_login')  %>
+          <% else %>
+            <%= link_to('Home', :root)  %>
+          <% end %>
 
-<% else %>
-<div id="landing_page_log_in" style="position: absolute; top: 10px; right:20px;"><%= link_to('Login', new_user_session_path)  %></div>
-<% end %>
+          <%= link_to('Find Food', :products) %>
+          <%= link_to('Post Food', new_product_path)  %>
+        </nav>
+
+      <nav>
+        <% if user_signed_in? %>
+              <%= link_to('Edit Account', '/users/edit') %>
+              <%= link_to("Welcome #{current_user.firstname}", '/pages/landing_page_login', class: 'welcome') %> 
+              <%= link_to('(Logout)', destroy_user_session_path, method: :delete, class: 'logout') %>     
+        <% else %>
+            <%= link_to('Login', new_user_session_path)  %></div>
+        <% end %>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>

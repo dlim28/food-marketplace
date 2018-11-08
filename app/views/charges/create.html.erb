@@ -6,11 +6,11 @@ about your new purchase</h3>
     <li>Item: <%= @product.title %></li>
     <li>Description: <%= @product.description %></li>
     <li>Location: <%= @product.pickup_location %></li>
-    <li>Poster: <%#= @product.user.first_name %> <%#= @product.user.last_name %></li>
-    <li>Contact Number: <%#= @product.user.contact_number %></li>
 </ul>
 
+<div class="links">
 <%= link_to('Post Food', '/products/new')  %>
 <%= link_to('Find Food', '/products')  %>
 <%= link_to('Manage Details', new_user_session_path)  %>
 <%= link_to('Order History', '/orders')  %>
+</div>

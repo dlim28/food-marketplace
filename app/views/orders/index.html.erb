@@ -1,15 +1,20 @@
+<html>
+
+
 <p id="notice"><%= notice %></p>
 
 <h1>Current Listings</h1>
-<div class="order_listing">
+<div class="listings">
+<img class="img1" src="https://uploads-ssl.webflow.com/5a7edf0d432d43000114d381/5ac2933deb517c7762bc1ba5_grapes.svg">
 <table class="order_table">
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Cost per unit</th>
-      <th>Pickup location</th>
-      <th>Food Category</th>
+      <th>Title.</th>
+      <th>Description.</th>
+      <th>Cost per unit.</th>
+      <th>Pickup location.</th>
+      <th>Food Category.</th>
+      <th>Posted By.</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -31,16 +36,15 @@
     <% end %>
   </tbody>
 </table>
-<div>
+<%# <div> %>
 <br>
 
-
+</div>
 <!-- ################################# Purchased section ################################ -->
 <h1 class="header">Purchase History</h1>
 
-
-<div class="body">
-<table>
+<div class="history">
+<table class="table1">
   <thead>
     <tr>
       <th>Quantity</th>
@@ -76,4 +80,6 @@
 <%= link_to 'Back', '/pages/landing_page_login' %>
 <br>
 
-<div>
+</div>
+
+</html>

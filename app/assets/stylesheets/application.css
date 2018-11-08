@@ -17,24 +17,57 @@
  
 body {
     background: #DEEFB7;
-
+    padding: 0;
+    margin: 0;
 }
 
-.rectangle {
-    margin-top: -60px;
-    margin-left: -50px;
-    height: 50px;
-    width: 1290px;
-    background-color: #82E380;
-    
-  }
+header {
+  padding: 1em;
+  background: #82E380;
+  display: flex;
+  justify-content: space-between;
+}
 
-  .navbar {
-    color: #71816D;
-    font-size: 14px;
-    font-family: "Heiti TC";
-    text-decoration: none;
-    padding: 10px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
+header nav a{
+  padding: 1em;
+}
+
+header nav a:hover{
+  color: #DEEFB7;
+}
+
+.logout {
+  padding-left: 0;
+}
+
+.welcome {
+  padding-right: 0;
+}
+
+/* .rectangle {
+    margin-top: -60px;
+    margin-left: -57px;
+    height: 50px;
+    width: 100vw;
+    background-color: #82E380;
+    overflow: hidden;
+} */
+
+.red-rectangle {
+  background: red;
+  
+}
+
+/* .rectangle:before{
+  content: "";
+  display: block;
+  padding-top: 25%;
+} */
+  
+
+body {
+  color: #71816D;
+  font-size: 14px;
+  font-family: "Heiti TC";
+  text-decoration: none; 
+}

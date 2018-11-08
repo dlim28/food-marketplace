@@ -2,53 +2,56 @@
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
+<div class="grid">
 
-  <div class="field">
+<img src="https://uploads-ssl.webflow.com/5a7edf0d432d43000114d381/5ac2b5ec8dffeb317575fbe2_desktop.svg" class="img">
+
+  <div class="field first_name">
     <%= f.label :First_Name %><br />
-    <%= f.text_field :firstname, autofocus: true, autocomplete: "firstname" %>
+    <%= f.text_field :firstname, autofocus: true, autocomplete: "firstname", class: "input_field" %>
   </div>
 
-  <div class="field">
+  <div class="field last_name">
     <%= f.label :Last_Name %><br/>
-    <%= f.text_field :lastname, autofocus: true, autocomplete: "lastname" %>
+    <%= f.text_field :lastname, autofocus: true, autocomplete: "lastname", class: "input_field" %>
   </div>
 
-<div class="field">
+<div class="field dob">
     <%= f.label :Date_of_Birth %><br />
-    <%= f.date_field :dob, autofocus: true, autocomplete: "firstname" %>
+    <%= f.date_field :dob, autofocus: true, autocomplete: "firstname", class: "input_field" %>
   </div>
 
-  <div class="field">
+  <div class="field email">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "input_field" %>
   </div>
 
-  <div class="field">
+  <div class="field number">
     <%= f.label :Phone %><br />
-    <%= f.text_field :phonenumber, autofocus: true, autocomplete: "firstname" %>
+    <%= f.text_field :phonenumber, autofocus: true, autocomplete: "firstname", class: "input_field" %>
   </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
 
-  <div class="field">
+  <div class="field pw">
     <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+    <%= f.password_field :password, autocomplete: "new-password", class: "input_field" %>
     <% if @minimum_password_length %>
       <br />
       <em><%= @minimum_password_length %> characters minimum</em>
     <% end %>
   </div>
 
-  <div class="field">
+  <div class="field pw_confirm">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "input_field" %>
   </div>
 
-  <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "current-password" %>
+  <div class="field current_pw">
+    <%= f.label :current_password %> <br />
+    <%= f.password_field :current_password, autocomplete: "current-password", style: "grid-column: 3", class: "input_field" %>
   </div>
 
   <div class="actions">
@@ -56,6 +59,11 @@
   </div>
 <% end %>
 
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+
+</div>
 
 <%= link_to "Back", :back %>
+
+<footer><%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, data: { confirm: "Don't do it" }, method: :delete, class: "cancel"%></footer>
+
+
