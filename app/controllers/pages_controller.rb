@@ -2,8 +2,13 @@ class PagesController < ApplicationController
   def welcome
     @main_header = "Foodtopia"
     @second_header = "Our Mission:"
-    @website_description = "Welcome to Foodtopia, an online marketplace where local urban farmers can trade and sell their homemade produce. If your chickens have laid a bit too many eggs or the lemon tree on your property has an abundance of lemons, you can post it on here and feed your neighbors. So, If you haven't already, click below to make an account and start buying and selling produce. You may be closer to some fresh locally sourced food than you think.
-    \n-The Foodtopia Team"     
+    @website_description = "<p>Foodtopia was built around the concept of sharing and trading excess food that you have. It's an age old concept that now has a platform for local food producers to enjoy. We wanted to create a marketplace for the local urban farmer to be able to sell what they grow/produce.</p>
+
+    <p>This project started in Melbourne which is a rapidly growing city with the community feel of a small suburban town, a beautiful mix if you ask us. There is a big urban gardening culture in this city, especially within the suburbs just minutes from the main CBD. With florishing gardens, household chickens laying eggs, urban beekeeping, a wide array of fruiting trees, etc. this city is alive with fresh and ethical food production. We at Foodtopia want to give these people a chance to sell and trade the excess produce that they have to people within their local area. Who knows what delicious treats are being grown on your own block?</p>
+    
+    <p>Food has always been a way for people to connect and build bonds, and that is the whole concept of this marketplace. So if you notice that you have excess eggs in your chicken coop or your tomato plant has an abundence of fruit, or maybe you just want to see what people are growing in your area, maybe it's time to sign up</p>
+    
+    <p>Happy Eating from all of us at Foodtopia!</p>".html_safe
 
 
   end
@@ -19,12 +24,10 @@ class PagesController < ApplicationController
   def about_us
     @main_header = "Foodtopia"
     @second_header = "Our Mission:"
-    @website_description = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Nulla non arcu lacinia neque faucibus fringilla. In convallis. Aliquam ornare wisi eu metus. In rutrum. In enim a arcu imperdiet malesuada. Integer in sapien. Pellentesque ipsum. Suspendisse sagittis ultrices augue. Nulla quis diam. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Sed ac dolor sit amet purus malesuada congue. Etiam egestas wisi a erat. Aliquam erat volutpat. 
+    @website_description = "<p>Foodtopia was built around the concept of sharing and trading excess food that you have. It's an age old concept that now has a platform for local food producers to enjoy. We wanted to create a marketplace for the local urban farmer to be able to sell what they grow/produce.</p>
 
-    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Donec vitae arcu. Mauris tincidunt sem sed arcu. Quisque porta. Integer imperdiet lectus quis justo. Aliquam erat volutpat.
-    
-    Integer imperdiet lectus quis justo. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Nam quis nulla. Vivamus luctus egestas leo. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Cras elementum. Vivamus porttitor turpis ac leo. In convallis. Aenean placerat. In enim a arcu imperdiet malesuada. Pellentesque arcu. Aliquam id dolor. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Phasellus et lorem id felis nonummy placerat. Mauris elementum mauris vitae tortor. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Aliquam in lorem sit amet leo accumsan lacinia. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus."
-
+    <p>This project started in Melbourne which is a rapidly growing city with the community feel of a small suburban town, a beautiful mix if you ask us. There is a big urban gardening culture in this city, especially within the suburbs just minutes from the main CBD. With florishing gardens, household chickens laying eggs, urban beekeeping, a wide array of fruiting trees, etc. this city is alive with fresh and ethical food production. We at Foodtopia want to give these people a chance to sell and trade the excess produce that they have to people within their local area. Who knows what delicious treats are being grown on your own block?</p>".html_safe
+  
   end
 
 end

@@ -2,17 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.header {
-    text-align: center;
-    margin-top: 40px;
+html {
+    align-content: center;
+    word-spacing: normal;
 }
 
-.order_listing {
+.listings {
     text-align: center;
-    align-items: center;
+    display: inline-block;
 }
 
-.order_table {
-    text-align: center;
-    align-items: center;
+.history {
+        text-align: center;
+        display: inline-block;
+    }
+
+.img1 {
+    width: 100px;
+    align-content: center;
+    display: inline-block;
 }
