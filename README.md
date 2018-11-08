@@ -1,5 +1,5 @@
 # Foodtopia README
-Link to web application: [LINK](https://obscure-sands-49263.herokuapp.com)
+Link to web application: [LINK](https://food-topia.herokuapp.com/)
 
 Link to GitHub respository: [LINK](https://github.com/dlim28/food-marketplace)
 
