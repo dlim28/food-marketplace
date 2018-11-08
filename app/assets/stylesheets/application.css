@@ -22,12 +22,19 @@ body {
 
 .rectangle {
     margin-top: -60px;
-    margin-left: -50px;
+    margin-left: -57px;
     height: 50px;
-    width: 1290px;
+    width: 200vh;
     background-color: #82E380;
-    
-  }
+    overflow: hidden;
+}
+
+.rectangle:before{
+  content: "";
+  display: block;
+  padding-top: 25%;
+}
+  
 
   .navbar {
     color: #71816D;

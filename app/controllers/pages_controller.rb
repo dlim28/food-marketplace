@@ -2,7 +2,9 @@ class PagesController < ApplicationController
   def welcome
     @main_header = "Foodtopia"
     @second_header = "Our Mission:"
-    @website_description = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Phasellus rhoncus. Integer in sapien. Etiam commodo dui eget wisi. Ut tempus purus at lorem. Nullam eget nisl. Mauris dictum facilisis augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent id justo in neque elementum ultrices. In convallis. "
+    @website_description = "Welcome to Foodtopia, an online marketplace where local urban farmers can trade and sell their homemade produce. If your chickens have laid a bit too many eggs or the lemon tree on your property has an abundance of lemons, you can post it on here and feed your neighbors. So, If you haven't already, click below to make an account and start buying and selling produce. You may be closer to some fresh locally sourced food than you think.
+    \n-The Foodtopia Team"     
+
 
   end
 

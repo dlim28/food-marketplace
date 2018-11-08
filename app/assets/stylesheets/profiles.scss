@@ -2,3 +2,83 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.grid {
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.input_field {
+    background: #82e380;
+    font-family: futura;
+    font-size: 14px;
+    color: #71816D;
+    border: #71816D;
+    border-radius: 5px;
+}
+
+.input_field:focus {
+    outline: none;
+  }
+
+
+.actions {
+    margin: 33px;
+    font-family: futura;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.first_name {
+    grid-area: 1/1;
+}
+
+.last_name {
+    grid-area: 1/2;
+}
+
+.email {
+    grid-area: 1/3;
+}
+
+.dob {
+    grid-area: 2/1;
+}
+
+.number {
+    grid-area: 2/3;
+}
+
+.pw {
+    grid-area: 3/1;
+}
+
+.current_pw {
+    grid-area: 3/3;
+}
+
+.pw_confirm {
+    grid-area: 3/2;
+}
+
+.actions {
+    grid-area: 4/2;
+    align-content: center;
+    margin-top: -40px;
+}
+
+.img {
+    grid-area: 2/2;
+    width: 80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left: 90px;
+}
+
+footer {
+    margin-top: 80px;
+}
