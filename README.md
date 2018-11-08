@@ -113,6 +113,8 @@ Order: The order table is there to made records of the purchases that the user w
 User: The user table is what will handle the authentication of the website
 
 Profile: The profile table is what controls the personal information for the website. We decided to split the two because it would be more secure if the table for authentication is seperate from personal data. Should there be a breach the personal data would technically be seperate from the user table.
+
+** note: the Profile table was made redundant, and all user data was placed into the User table as there were issues with accessing the two tables on forms/pages. Effort was expended trying to make this work, but in the end we had to have all the User data in the one table. The closest solution I got to was have the Profile table be a sub-class of the User table, and then have a piece of code that would prevent the columns from the User table being inherited into the profile table. With more time, I am are sure that a solution would have been discovered.
 ```
 
 >HTML/CSS
